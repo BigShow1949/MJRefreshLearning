@@ -1,0 +1,431 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1868EF5C2068CE9A00EEE713 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1868EF5B2068CE9A00EEE713 /* AppDelegate.m */; };
+		1868EF5F2068CE9A00EEE713 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1868EF5E2068CE9A00EEE713 /* ViewController.m */; };
+		1868EF622068CE9A00EEE713 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1868EF602068CE9A00EEE713 /* Main.storyboard */; };
+		1868EF652068CE9A00EEE713 /* MJRefreshLearning.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1868EF632068CE9A00EEE713 /* MJRefreshLearning.xcdatamodeld */; };
+		1868EF672068CE9A00EEE713 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1868EF662068CE9A00EEE713 /* Assets.xcassets */; };
+		1868EF6A2068CE9A00EEE713 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1868EF682068CE9A00EEE713 /* LaunchScreen.storyboard */; };
+		1868EF6D2068CE9A00EEE713 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1868EF6C2068CE9A00EEE713 /* main.m */; };
+		A3519D6D90C3BE04C59EB478 /* libPods-MJRefreshLearning.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AEFDCBA55427EAF1CC2CE20B /* libPods-MJRefreshLearning.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1868EF572068CE9A00EEE713 /* MJRefreshLearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MJRefreshLearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1868EF5A2068CE9A00EEE713 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1868EF5B2068CE9A00EEE713 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1868EF5D2068CE9A00EEE713 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1868EF5E2068CE9A00EEE713 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1868EF612068CE9A00EEE713 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1868EF642068CE9A00EEE713 /* MJRefreshLearning.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MJRefreshLearning.xcdatamodel; sourceTree = "<group>"; };
+		1868EF662068CE9A00EEE713 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1868EF692068CE9A00EEE713 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1868EF6B2068CE9A00EEE713 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1868EF6C2068CE9A00EEE713 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		429E453BE398BF4C9916E253 /* Pods-MJRefreshLearning.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MJRefreshLearning.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MJRefreshLearning/Pods-MJRefreshLearning.debug.xcconfig"; sourceTree = "<group>"; };
+		AEFDCBA55427EAF1CC2CE20B /* libPods-MJRefreshLearning.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MJRefreshLearning.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B71A4772A13DA8847EA9FD15 /* Pods-MJRefreshLearning.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MJRefreshLearning.release.xcconfig"; path = "Pods/Target Support Files/Pods-MJRefreshLearning/Pods-MJRefreshLearning.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1868EF542068CE9A00EEE713 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3519D6D90C3BE04C59EB478 /* libPods-MJRefreshLearning.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1868EF4E2068CE9A00EEE713 = {
+			isa = PBXGroup;
+			children = (
+				1868EF592068CE9A00EEE713 /* MJRefreshLearning */,
+				1868EF582068CE9A00EEE713 /* Products */,
+				9CE7FCABDFAC9EF166844C51 /* Pods */,
+				EC71658B92039D01FE90D656 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1868EF582068CE9A00EEE713 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1868EF572068CE9A00EEE713 /* MJRefreshLearning.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1868EF592068CE9A00EEE713 /* MJRefreshLearning */ = {
+			isa = PBXGroup;
+			children = (
+				1868EF5A2068CE9A00EEE713 /* AppDelegate.h */,
+				1868EF5B2068CE9A00EEE713 /* AppDelegate.m */,
+				1868EF5D2068CE9A00EEE713 /* ViewController.h */,
+				1868EF5E2068CE9A00EEE713 /* ViewController.m */,
+				1868EF602068CE9A00EEE713 /* Main.storyboard */,
+				1868EF662068CE9A00EEE713 /* Assets.xcassets */,
+				1868EF682068CE9A00EEE713 /* LaunchScreen.storyboard */,
+				1868EF6B2068CE9A00EEE713 /* Info.plist */,
+				1868EF6C2068CE9A00EEE713 /* main.m */,
+				1868EF632068CE9A00EEE713 /* MJRefreshLearning.xcdatamodeld */,
+			);
+			path = MJRefreshLearning;
+			sourceTree = "<group>";
+		};
+		9CE7FCABDFAC9EF166844C51 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				429E453BE398BF4C9916E253 /* Pods-MJRefreshLearning.debug.xcconfig */,
+				B71A4772A13DA8847EA9FD15 /* Pods-MJRefreshLearning.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EC71658B92039D01FE90D656 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AEFDCBA55427EAF1CC2CE20B /* libPods-MJRefreshLearning.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1868EF562068CE9A00EEE713 /* MJRefreshLearning */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1868EF702068CE9A00EEE713 /* Build configuration list for PBXNativeTarget "MJRefreshLearning" */;
+			buildPhases = (
+				B3ADCA729B3BBFCBEA04F6AA /* [CP] Check Pods Manifest.lock */,
+				1868EF532068CE9A00EEE713 /* Sources */,
+				1868EF542068CE9A00EEE713 /* Frameworks */,
+				1868EF552068CE9A00EEE713 /* Resources */,
+				06A16D8B6334608AD5858F3B /* [CP] Embed Pods Frameworks */,
+				2E93008BD18A7AB8AA073A8B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MJRefreshLearning;
+			productName = MJRefreshLearning;
+			productReference = 1868EF572068CE9A00EEE713 /* MJRefreshLearning.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1868EF4F2068CE9A00EEE713 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = MJRefreshLearning;
+				TargetAttributes = {
+					1868EF562068CE9A00EEE713 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 1868EF522068CE9A00EEE713 /* Build configuration list for PBXProject "MJRefreshLearning" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1868EF4E2068CE9A00EEE713;
+			productRefGroup = 1868EF582068CE9A00EEE713 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1868EF562068CE9A00EEE713 /* MJRefreshLearning */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1868EF552068CE9A00EEE713 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1868EF6A2068CE9A00EEE713 /* LaunchScreen.storyboard in Resources */,
+				1868EF672068CE9A00EEE713 /* Assets.xcassets in Resources */,
+				1868EF622068CE9A00EEE713 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		06A16D8B6334608AD5858F3B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MJRefreshLearning/Pods-MJRefreshLearning-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2E93008BD18A7AB8AA073A8B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MJRefreshLearning/Pods-MJRefreshLearning-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefreshExample/MJRefreshExample/MJRefresh/MJRefresh.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MJRefreshLearning/Pods-MJRefreshLearning-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3ADCA729B3BBFCBEA04F6AA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MJRefreshLearning-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1868EF532068CE9A00EEE713 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1868EF652068CE9A00EEE713 /* MJRefreshLearning.xcdatamodeld in Sources */,
+				1868EF5F2068CE9A00EEE713 /* ViewController.m in Sources */,
+				1868EF6D2068CE9A00EEE713 /* main.m in Sources */,
+				1868EF5C2068CE9A00EEE713 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1868EF602068CE9A00EEE713 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1868EF612068CE9A00EEE713 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1868EF682068CE9A00EEE713 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1868EF692068CE9A00EEE713 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1868EF6E2068CE9A00EEE713 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1868EF6F2068CE9A00EEE713 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1868EF712068CE9A00EEE713 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 429E453BE398BF4C9916E253 /* Pods-MJRefreshLearning.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3JJP29A3NU;
+				INFOPLIST_FILE = MJRefreshLearning/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MJRefreshLearning.MJRefreshLearning;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1868EF722068CE9A00EEE713 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B71A4772A13DA8847EA9FD15 /* Pods-MJRefreshLearning.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3JJP29A3NU;
+				INFOPLIST_FILE = MJRefreshLearning/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MJRefreshLearning.MJRefreshLearning;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1868EF522068CE9A00EEE713 /* Build configuration list for PBXProject "MJRefreshLearning" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1868EF6E2068CE9A00EEE713 /* Debug */,
+				1868EF6F2068CE9A00EEE713 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1868EF702068CE9A00EEE713 /* Build configuration list for PBXNativeTarget "MJRefreshLearning" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1868EF712068CE9A00EEE713 /* Debug */,
+				1868EF722068CE9A00EEE713 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1868EF632068CE9A00EEE713 /* MJRefreshLearning.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1868EF642068CE9A00EEE713 /* MJRefreshLearning.xcdatamodel */,
+			);
+			currentVersion = 1868EF642068CE9A00EEE713 /* MJRefreshLearning.xcdatamodel */;
+			path = MJRefreshLearning.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1868EF4F2068CE9A00EEE713 /* Project object */;
+}
