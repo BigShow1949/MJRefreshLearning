@@ -20,54 +20,69 @@
     [super viewDidLoad];
 
     /*
-     =======================   版本1.0.3   =======================
+     =======================   版本2.0.0   =======================
      引申问题:
-     1.MJDeprecated 过期提醒的写法
+     1.每个派生类负责什么?
+     2.注意prepare方法的写法
      
      修改地方:
-     1.UIView+MJExtension 中的mj_width; 改为mj_w;
-     2.UIScrollView+MJExtension 中的mj_contentInsetTop 改为 mj_insetT
-     3.新增派生类 Gif 跟 Legend 的 header跟 footer
-     4.在UIScrollView+MJRefresh中添加 header属性, 之前是用方法实现的.
-     5.基类不再负责刷新状态判断,控件位置计算, 都交给header跟footer去处理
-     */
+     1.新增BackFooter控件
+     2.UIScrollView+MJRefresh 只有footer跟header两个属性,并且直接赋值
+     
+     架构图:
+                              MJRefreshComponent
+     
+     <-- MJRefreshFooter
+     <-- MJRefreshAutoFooter
+     <-- MJRefreshAutoStateFooter
+     <-- MJRefreshAutoGifFooter / MJRefreshAutoNormalFooter
+     
+     <-- MJRefreshFooter
+     <-- MJRefreshBackFooter
+     <-- MJRefreshBackStateFooter
+     <-- MJRefreshBackGifFooter / MJRefreshBackNormalFooter
+     
+     <-- MJRefreshHeader
+     <-- MJRefreshHeaderStateHeader
+     <-- MJRefreshNormalHeader / MJRefreshGifHeader
+     
+    */
     
     
     self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, 300, 600)];
-//    self.tableView.backgroundColor = [UIColor lightGrayColor];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     [self.view addSubview:self.tableView];
+  
+    self.tableView.header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+        NSLog(@"headerRereshing---block");
+        [self.tableView.header endRefreshing];
+    }];
     
-    
-    [self.tableView addLegendHeader];
-    [self.tableView addLegendFooter];
-//    [self.tableView addHeaderWithTarget:self action:@selector(headerRereshing)];
-//    [self.tableView addFooterWithTarget:self action:@selector(footerRereshing)];
-    
-    
-    [self.tableView.header setRefreshingTarget:self refreshingAction:@selector(headerRereshing)];
-    [self.tableView.footer setRefreshingTarget:self refreshingAction:@selector(footerRereshing)];
-
+    self.tableView.footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
+        NSLog(@"footerRereshing---block");
+        [self.tableView.footer endRefreshing];
+    }] ;
+//    self.tableView.footer = [MJRefreshBackNormalFooter footerWithRefreshingBlock:^{
+//        NSLog(@"footerRereshing---block");
+//        [self.tableView.footer endRefreshing];
+//    }];
     
     [self.tableView reloadData];
-    // Do any additional setup after loading the view, typically from a nib.
 }
 
-- (void)headerRereshing {
-    
-    NSLog(@"headerRereshing");
-//    [self.tableView headerEndRefreshing];
-    
-    [self.tableView.header endRefreshing];
-}
-
-- (void)footerRereshing {
-    NSLog(@"footerRereshing");
-//    [self.tableView footerEndRefreshing];
-    [self.tableView.footer endRefreshing];
-
-}
+//- (void)headerRereshing {
+//
+//    NSLog(@"headerRereshing");
+//
+//    [self.tableView.header endRefreshing];
+//}
+//
+//- (void)footerRereshing {
+//    NSLog(@"footerRereshing");
+//    [self.tableView.footer endRefreshing];
+//
+//}
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return 5;
@@ -98,6 +113,18 @@
  9.autoresizingMask
  */
 
+/*
+ =======================   版本1.0.3   =======================
+ 引申问题:
+ 1.MJDeprecated 过期提醒的写法
+ 
+ 修改地方:
+ 1.UIView+MJExtension 中的mj_width; 改为mj_w;
+ 2.UIScrollView+MJExtension 中的mj_contentInsetTop 改为 mj_insetT
+ 3.新增派生类 Gif 跟 Legend 的 header跟 footer
+ 4.在UIScrollView+MJRefresh中添加 header属性, 之前是用方法实现的.
+ 5.基类不再负责刷新状态判断,控件位置计算, 都交给header跟footer去处理
+ */
 
 
 @end

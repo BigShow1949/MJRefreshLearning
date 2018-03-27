@@ -1,7 +1,7 @@
 platform :ios, '8.0'
 target "MJRefreshLearning" do
 
-pod 'MJRefresh', '1.0.3'
+pod 'MJRefresh', '2.0.0'
 
 end
 
