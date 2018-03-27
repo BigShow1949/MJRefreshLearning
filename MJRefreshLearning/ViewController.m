@@ -20,7 +20,7 @@
     [super viewDidLoad];
 
     /*
-     =======================   版本2.0.0   =======================
+     =======================   版本3.0.0   =======================
      引申问题:
      1.每个派生类负责什么?
      2.注意prepare方法的写法
@@ -54,14 +54,14 @@
     self.tableView.dataSource = self;
     [self.view addSubview:self.tableView];
   
-    self.tableView.header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+    self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
         NSLog(@"headerRereshing---block");
-        [self.tableView.header endRefreshing];
+        [self.tableView.mj_header endRefreshing];
     }];
     
-    self.tableView.footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
+    self.tableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
         NSLog(@"footerRereshing---block");
-        [self.tableView.footer endRefreshing];
+        [self.tableView.mj_footer endRefreshing];
     }] ;
 //    self.tableView.footer = [MJRefreshBackNormalFooter footerWithRefreshingBlock:^{
 //        NSLog(@"footerRereshing---block");
@@ -95,9 +95,9 @@
     return cell;
 }
 
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    [self.tableView.footer beginRefreshing];
-}
+//- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+//    [self.tableView.mj_footer beginRefreshing];
+//}
 
 /*
  =======================   版本0.0.1   =======================
